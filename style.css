@@ -33,6 +33,25 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.headshot {
+  width: 120px;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Responsive layout */
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  .headshot {
+    width: 160px;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 0.9em;
@@ -40,3 +59,4 @@ footer {
   border-top: 1px solid #ddd;
   margin-top: 2rem;
 }
+
