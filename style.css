@@ -1,62 +1,59 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
-}
-
-header, nav, main, footer {
-  max-width: 900px;
-  margin: auto;
-  padding: 1rem;
-}
-
-header h1 {
-  margin-bottom: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #007acc;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.headshot {
-  width: 120px;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-/* Responsive layout */
-@media (min-width: 700px) {
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-  }
-  .headshot {
-    width: 160px;
-  }
-}
-
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #666;
-  border-top: 1px solid #ddd;
-  margin-top: 2rem;
-}
-
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, nav {
+            text-align: center;
+        }
+        header img {
+            width: 120px;
+            height: auto;
+            border-radius: 50%;
+        }
+        header h1 {
+            margin: 10px 0 5px;
+        }
+        header p {
+            margin: 5px 0 15px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: block;
+            margin: 8px 0;
+        }
+        nav ul li a {
+            color: #4da6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a: hover {
+            text-decoration: underline;
+        }
+        /* For larger screens: horizontal nav */
+        @media (min-width: 600px) {
+            nav ul li {
+                display: inline-block;
+                margin: 0 15px;
+            }
+        }
+        section {
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0 10px;
+            font-size: 0.9em;
+        }
