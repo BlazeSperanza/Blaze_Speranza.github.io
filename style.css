@@ -1,59 +1,81 @@
+/* Reset some default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #f0f0f0;
-            line-height: 1.6;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header, nav {
-            text-align: center;
-        }
-        header img {
-            width: 120px;
-            height: auto;
-            border-radius: 50%;
-        }
-        header h1 {
-            margin: 10px 0 5px;
-        }
-        header p {
-            margin: 5px 0 15px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: block;
-            margin: 8px 0;
-        }
-        nav ul li a {
-            color: #4da6ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a: hover {
-            text-decoration: underline;
-        }
-        /* For larger screens: horizontal nav */
-        @media (min-width: 600px) {
-            nav ul li {
-                display: inline-block;
-                margin: 0 15px;
-            }
-        }
-        section {
-            margin: 20px 0;
-        }
-        footer {
-            text-align: center;
-            margin: 20px 0 10px;
-            font-size: 0.9em;
-        }
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;  /* dark gray background */
+  color: #f0f0f0;             /* light text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Header */
+header .headshot {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+header p a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  margin: 25px 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #ffd966; /* accent color for headings */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 6px 0;
+}
+
+/* Links inside projects */
+#projects a {
+  color: #4da6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#projects a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
